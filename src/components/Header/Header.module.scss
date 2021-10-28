@@ -1,0 +1,54 @@
+.header {
+  background-color: #0f5c88;
+  display: flex;
+  justify-content: center;
+
+  .wrapper {
+    max-width: 1000px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+
+    .add {
+      display: flex;
+
+      .inputAdd {
+        margin-right: 12px;
+        padding: 10px 20px;
+        font-size: 17px;
+        max-width: 300px;
+        width: 100%;
+      }
+
+      .buttonAdd {
+        padding: 10px 20px;
+        background-color: #4a8848;
+        border: 1px solid #4a8848;
+        cursor: pointer;
+
+        &:hover {
+          background-color: #89c787;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .header {
+    .wrapper {
+      flex-direction: column;
+      gap: 10px;
+
+      .add {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+}

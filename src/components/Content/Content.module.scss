@@ -1,0 +1,109 @@
+.content {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 10px;
+
+  .wrapper {
+    background-color: #aca357;
+    max-width: 500px;
+    width: 100%;
+    padding: 10px;
+    margin: 0 auto;
+
+    .editWrapper {
+      margin: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .title {
+        font-size: 25px;
+        margin-right: 20px;
+      }
+
+      .input {
+        padding: 10px 20px;
+        font-size: 20px;
+      }
+    }
+
+    p {
+      text-align: center;
+      color: #ffffff;
+    }
+  }
+
+  .todo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #38aff3;
+    margin: 15px 0;
+    cursor: grab;
+
+    .name {
+      font-size: 16px;
+
+      &.complete {
+        text-decoration: line-through;
+      }
+    }
+
+    .controls {
+      max-width: 100px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .chackbox {
+        width: 22px;
+        height: 22px;
+      }
+
+      .del {
+        border: none;
+        background-image: url('../../assets/images/delete.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 25px;
+        height: 25px;
+        background-color: transparent;
+        transition: 0.2s;
+        cursor: pointer;
+
+        &:hover {
+          outline: 1px solid #af0f0f;
+          border-radius: 50%;
+          transform: scale(1.2);
+        }
+      }
+
+      .edit {
+        border: none;
+        background-image: url('../../assets/images/editing.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 25px;
+        height: 25px;
+        background-color: transparent;
+        transition: 0.2s;
+        cursor: pointer;
+
+        &:hover {
+          outline: 1px solid #9c0faf;
+          border-radius: 50%;
+          transform: scale(1.2);
+        }
+      }
+    }
+
+    &.complete {
+      background-color: #47f338;
+    }
+  }
+}
